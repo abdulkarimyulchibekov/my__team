@@ -1,0 +1,116 @@
+.hero {
+  background-color: $main-color-green;
+}
+.hero {
+  background-image: url("../../images/hero-left-bgi.png"), url("../../images/hero-bottom-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 100px 200px, 290px;
+  background-position: calc(50% - 720px) calc(50% - 75px),
+  calc(50% + 400px) calc(100%);
+}
+
+.hero__inner {
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 255px;
+  display: flex;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: $main-color-white;
+  width: 100%;
+  max-width: 635px;
+  margin-right: 30px;
+}
+
+.hero__title--active {
+  display: inline-block;
+  margin: 0;
+  color: $main-color-coral;
+}
+
+.hero__line {
+  height: 100%;
+  max-height: 4px;
+  width: 50px;
+  margin-bottom: 79px;
+  background-color: #79C8C7;;
+}
+
+.hero__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $main-color-white;
+  width: 445px;
+}
+
+@include max-widht(768px) {
+  .hero {
+    background-image: url("../../images/hero-left-bgi.png"), url("../../images/hero-bottom-bgi.png");
+    background-repeat: no-repeat;
+    background-size: 100px 200px, 290px;
+    background-position: calc(50% - 720px) calc(50% - 75px),
+    calc(50%) calc(100%);
+  }
+  
+  .hero__line {
+    display: none;
+  }
+  
+  .hero__title {
+    text-align: center;
+    width: 100%;
+    max-width: 683px;
+  }
+  
+  .hero__text {
+    width: 100%;
+    max-width: 457px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__right {
+    display: inline-block;
+  }
+  
+  .hero__inner{
+    flex-direction: column;
+  }
+}
+
+
+@include max-widht(446px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .hero__text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero {
+    background-image: url("../../images/hero-left-bgi@2x.png"), url("../../images/hero-bottom-bgi@2x.png");
+  }
+} 
