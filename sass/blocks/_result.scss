@@ -1,0 +1,144 @@
+.site-result {}
+
+.result {
+  background: #004047;
+  background-image: url("../../images/result-top-bgi.png"),
+  url("../../images/result-bottom-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 100px;
+  background-position: calc(50% - 700px) top, calc(50% + 700px) bottom;
+}
+
+.container {}
+
+.result__inner {
+
+}
+
+.result__header {
+  margin: 0;
+  padding-top: 140px;
+  text-align: center;
+  width: 100%;
+  max-width: 948px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 92px;
+}
+
+.result__header--active {
+  color: #79C8C7;
+}
+
+.result__list {
+  @include list-starter;
+  @include flex-starter;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+
+.result__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url("../../images/main-bgi.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position:top  center;
+
+  &:nth-child(2) {
+    margin: 0 20px;
+  }
+}
+
+.result__decs {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 350px;
+  padding-top: 36px;
+}
+
+.result__subheader {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+  margin-bottom: 2px;
+}
+
+.result__text {
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.result__img {
+  max-width: 62px;
+  max-height: 62px;
+  margin-bottom: 48px;
+}
+
+@include max-widht(768px) {
+  .result {
+    background-position: calc(50% - 541px) top, calc(50% + 515px) bottom;
+  }
+
+  .result__list {
+    flex-direction: column;
+  }
+  .result__item {
+    margin-bottom: 48px;
+  }
+
+  .result__header {
+    margin: 0;
+    padding-top: 140px;
+    text-align: center;
+    width: 100%;
+    max-width: 948px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 92px;
+  }
+}
+
+@include max-widht(375px) {
+  .result {
+    background-position:top calc(50% - 200px), bottom calc(50% + 200px);
+  }
+
+  .result__header {
+    margin: 0;
+    padding-top: 140px;
+    text-align: center;
+    width: 100%;
+    max-width: 948px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 92px;
+  }
+}

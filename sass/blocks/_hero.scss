@@ -2,10 +2,10 @@
   background-color: $main-color-green;
 }
 .hero {
-  background-image: url("../../images/hero-left-bgi.png"), url("../../images/hero-bottom-bgi.png");
+  background-image: url("../images/hero-left-bgi.png"), url("../images/hero-bottom-bgi.png");
   background-repeat: no-repeat;
-  background-size: 100px 200px, 290px;
-  background-position: calc(50% - 720px) calc(50% - 75px),
+  background-size: 200px, 290px;
+  background-position: calc(50% - 770px) calc(50% - 75px),
   calc(50% + 400px) calc(100%);
 }
 
@@ -15,6 +15,8 @@
   padding-bottom: 255px;
   display: flex;
 }
+
+
 
 .hero__title {
   margin: 0;
@@ -38,7 +40,7 @@
   max-height: 4px;
   width: 50px;
   margin-bottom: 79px;
-  background-color: #79C8C7;;
+  background-color: $hero-line-color;
 }
 
 .hero__text {
@@ -47,13 +49,14 @@
   line-height: 28px;
   color: $main-color-white;
   width: 445px;
+  margin: 0;
 }
 
 @include max-widht(768px) {
   .hero {
     background-image: url("../../images/hero-left-bgi.png"), url("../../images/hero-bottom-bgi.png");
     background-repeat: no-repeat;
-    background-size: 100px 200px, 290px;
+    background-size: contain, 290px;
     background-position: calc(50% - 720px) calc(50% - 75px),
     calc(50%) calc(100%);
   }
@@ -91,7 +94,7 @@
     font-size: 40px;
     line-height: 40px;
     text-align: center;
-    color: #FFFFFF;
+    color: $main-color-white;
   }
   
   .hero__text {
@@ -99,7 +102,7 @@
     font-size: 15px;
     line-height: 28px;
     text-align: center;
-    color: #FFFFFF;
+    color: $main-color-white;
   }
 }
 
@@ -114,3 +117,5 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../../images/hero-left-bgi@2x.png"), url("../../images/hero-bottom-bgi@2x.png");
   }
 } 
+
+

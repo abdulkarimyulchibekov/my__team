@@ -11,6 +11,8 @@
 
 .header__img {
   margin-right: 80px;
+  max-width: 160px;
+  max-height: 40px;
 }
 
 .header__list {
@@ -26,7 +28,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: $main-color-white;
   text-decoration: none;
 }
 
@@ -36,11 +38,22 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  color: $main-color-white;
+  border: 2px solid $main-color-white;
   border-radius: 24px;
-  background-color: $main-color-green;  
+  background-color: $main-color-green;
   padding: 10px 32px;
+
+  &:hover {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $header-hover;
+    background:  $main-color-white;
+    border: 2px solid $main-color-white;
+    border-radius: 24px;
+  }
 }
 
 .header__button--mobile {
@@ -52,14 +65,18 @@
 }
 
 @include max-widht(630px) {
+  .header__img {
+    max-width: 128px;
+    max-height: 32px;
+  }
+
   .header__button--mobile {
     display: inline-block;
     margin-left: auto;
   }
-  
+
   .header__button,
   .header__nav {
     display: none;
   }
 }
-
