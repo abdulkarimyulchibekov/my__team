@@ -123,7 +123,7 @@
 
 @include max-widht(375px) {
   .result {
-    background-position:top calc(50% - 200px), bottom calc(50% + 200px);
+    background-position: calc(50% - 105px) top, calc(50% + 80px) bottom;
   }
 
   .result__header {
