@@ -10,13 +10,15 @@
 }
 
 .about-hero__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 64px;
   line-height: 100px;
   color: #FFFFFF;
   width: 100%;
   max-width: 350px;
+  margin-right: 30px !important; 
 }
 
 .about-hero__right {}
@@ -35,3 +37,5 @@
   line-height: 28px;
   color: #FFFFFF;
 }
+
+@include max-widht()
