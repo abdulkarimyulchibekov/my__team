@@ -31,6 +31,16 @@
   border: 2px solid $build-bgi;
   border-radius: 24px;
   padding: 10px 32px;
+
+  &:hover {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $main-color-white;
+    background: #012F34;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+  }
 }
 
 @include max-widht(768px) {
