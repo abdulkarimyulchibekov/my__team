@@ -25,14 +25,14 @@
   font-size: 48px;
   line-height: 48px;
   text-align: center;
-  color: #FFFFFF;
+  color: $main-color-white;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 92px;
 }
 
 .result__header--active {
-  color: #79C8C7;
+  color: $hero-line-color;
 }
 
 .result__list {
@@ -62,7 +62,7 @@
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: $main-color-white;
   margin: 0;
   margin-bottom: 24px;
   width: 100%;
@@ -75,14 +75,14 @@
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  color: #79C8C7;
+  color: $hero-line-color;
   margin-bottom: 2px;
 }
 
 .result__text {
   line-height: 18px;
   text-align: center;
-  color: #FFFFFF;
+  color: $main-color-white;
   margin-bottom: 32px;
 }
 
@@ -114,7 +114,7 @@
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-    color: #FFFFFF;
+    color: $main-color-white;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 92px;
@@ -136,7 +136,7 @@
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-    color: #FFFFFF;
+    color: $main-color-white;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 92px;
